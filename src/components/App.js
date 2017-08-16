@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
 // import logo from './logo.svg';
-import '../styles/App.css';
-import EarthquakeList from './EarthquakeList';
+import "../styles/App.css"
+import EarthquakeList from "./EarthquakeList"
+import EarthquakeInfo from "./EarthquakeInfo"
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="title">
-          <div className="my-header">
-            "Earthquakes!"
-          </div>
+          <div className="my-header">"Earthquakes!"</div>
         </div>
-        <p className="App-intro">
+        <div className="App-intro">
+          <EarthquakeInfo />
           <EarthquakeList />
-        </p>
+        </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
